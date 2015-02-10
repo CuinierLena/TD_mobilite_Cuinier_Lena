@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">android-domotique</string>
+  <!-- Fragments et onglets -->
+  <string name="config_titre">[Config]</string>
+  <string name="blink_titre">[Blink]</string>
+  <string name="pinread_titre">[PinRead]</string>
+  <string name="pinwrite_titre">[PinWrite]</string>
+  <string name="commands_titre">[Commands]</string>
+  <!-- Config -->
+  <string name="txt_TitreConfig">Se connecter au serveur</string>
+  <string name="txt_UrlServiceRest">Url du service web / jSON</string>
+  <string name="txt_MsgErreurUrlServiceRest">L\'Url du service doit être entrée sous la forme Ip1.Ip2.Ip3.IP4:Port/contexte</string>
+  <string name="hint_UrlServiceRest">ex (192.168.1.120:8080/rest)</string>
+  <string name="btn_annuler">Annuler</string>
+  <string name="btn_rafraichir">Rafraîchir</string>
+  <string name="titre_list_arduinos">Liste des Arduinos connectés</string>
+  <string name="titre_commande">Commande</string>
+  <string name="dummy">XXXXX</string>
+  <!-- listarduinos_item -->
+  <string name="txt_arduino_id">Id : </string>
+  <string name="txt_arduino_description">Description : </string>
+
+  <!-- Blink -->
+  <string name="txt_TitreBlink">Faire clignoter une Led</string>
+  <string name="txt_pin">Numéro de pin</string>
+  <string name="txt_blink">Nombre de clignotements</string>
+  <string name="txt_blink_speed">Durée du clignotement en millisecondes</string>
+  <string name="btn_Executer">Exécuter</string>
+  <string name="titre_list_reponces">Réponses des Arduinos</string>
+  <string name="hint_blink">entre 1 et 100</string>
+  <string name="hint_blink_speed">entre 100 et 2000</string>
+
+  <!-- pinWrite -->
+  <string name="radio_analogique">analogique</string>
+  <string name="radio_binaire">binaire</string>
+  <string name="switch_val_to_write">Valeur à écrire</string>
+  <string name="txt_mode">Mode</string>
+  <string name="analogique_val">0</string>
+
+  <!-- Commands -->
+  <string name="titre_commande_json">Commande JSON à exécuter</string>
+
+
+
+</resources>

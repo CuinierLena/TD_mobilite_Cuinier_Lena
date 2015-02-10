@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+  <TextView
+    android:id="@+id/txt_TitreConfig"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="@string/txt_TitreConfig"
+    android:textSize="@dimen/titre" />
+  <TextView
+    android:id="@+id/txt_UrlServiceRest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/txt_TitreConfig"
+    android:layout_marginTop="50dp"
+    android:text="@string/txt_UrlServiceRest"
+    android:textSize="20sp" />
+  <EditText
+    android:id="@+id/edt_UrlServiceRest"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txt_UrlServiceRest"
+    android:layout_alignBottom="@+id/txt_UrlServiceRest"
+    android:layout_marginLeft="20dp"
+    android:layout_toRightOf="@+id/txt_UrlServiceRest"
+    android:ems="10"
+    android:hint="@string/hint_UrlServiceRest"
+    android:inputType="textUri" >
+    <requestFocus />
+  </EditText>
+  <TextView
+    android:id="@+id/txt_MsgErreurIpPort"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/txt_UrlServiceRest"
+    android:layout_marginTop="20dp"
+    android:text="@string/txt_MsgErreurUrlServiceRest"
+    android:textColor="@color/red"
+    android:textSize="20sp" />
+  <TextView
+    android:id="@+id/txt_arduinos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/txt_MsgErreurIpPort"
+    android:layout_marginTop="40dp"
+    android:text="@string/titre_list_arduinos"
+    android:textColor="@color/blue"
+    android:textSize="20sp" />
+  <Button
+    android:id="@+id/btn_Rafraichir"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txt_arduinos"
+    android:layout_alignBottom="@+id/txt_arduinos"
+    android:layout_marginLeft="20dp"
+    android:layout_toRightOf="@+id/txt_arduinos"
+    android:text="@string/btn_rafraichir" />
+  <Button
+    android:id="@+id/btn_Annuler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txt_arduinos"
+    android:layout_alignBottom="@+id/txt_arduinos"
+    android:layout_marginLeft="20dp"
+    android:layout_toRightOf="@+id/txt_arduinos"
+    android:text="@string/btn_annuler"
+    android:visibility="invisible" />
+  <ListView
+    android:id="@+id/ListViewArduinos"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/txt_arduinos"
+    android:layout_marginTop="30dp"
+    android:background="@color/wheat">
+  </ListView>
+</RelativeLayout>
